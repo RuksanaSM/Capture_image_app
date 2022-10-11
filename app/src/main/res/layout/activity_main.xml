@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+
+        <!--edit text for adding course name-->
+        <ImageView
+            android:id="@+id/idEdtCourseName"
+            android:onClick="imageCLick"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_camera_enhance_24"
+            android:layout_toStartOf="@id/idBtnSave"
+            android:layout_toLeftOf="@id/idBtnSave"
+            android:hint="Enter course Name" />
+
+
+
+        <!--button for adding data to recycler view-->
+        <Button
+            android:id="@+id/idBtnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtCourseName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="Add " />
+
+        <!--button for saving data to shared prefs-->
+        <Button
+            android:id="@+id/idBtnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="Save " />
+
+        <!--recycler view to display our data-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVCourses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/idEdtCourseName" />
+
+
+
+    <!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="5dp" >-->
+<!--            <Button-->
+<!--                android:id="@+id/btnSelectPhoto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Select Photo" />-->
+<!--            <Button-->
+<!--                android:id="@+id/btnResetPhoto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Reset Photo" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp" >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/viewImage"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/ic_baseline_camera_enhance_24" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:id="@+id/gridview"-->
+<!--        />-->
+
+<!--        </LinearLayout>-->
+    </LinearLayout>
